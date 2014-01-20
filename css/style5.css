@@ -1,0 +1,332 @@
+body
+{
+  background-color: #fff;
+  font-family: Orator Std;
+  font-size: 14px;
+    border:0;
+  margin:0 0;
+
+/*  background-image: url('../img/bg/shattered.png');
+  background-position: fixed;
+  background-repeat: repeat;*/
+
+}
+
+.small {
+  max-height:200px;
+}
+
+iframe
+{
+position: fixed;
+height: 100%;
+width: 100%;
+border: none;
+top: 0; right: 0; bottom: 0; left: 0;
+}
+
+div#container {
+position: fixed;
+}
+
+div#header {
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin: 0;
+  z-index: 3;
+}
+
+div#left {
+position: relative;
+padding-left: 10px;
+float: left;
+display: inline;
+}
+
+div#ceenter {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+
+div#right {
+position: relative;
+padding-right: 10px;
+display: inline;
+float: right;
+}
+
+
+
+div#divBottom {
+position: relative;
+top: 10px;
+bottom: 0px;
+width:100%;
+height:auto;
+color:#333;
+font-size: 12px;
+}
+
+div#navMenu {
+  position: absolute;
+  padding-right: auto;
+  margin-left: auto;
+  width: inherit;
+  height: inherit;
+  border: 2px solid red;
+  background-color: #fff;
+}
+
+div#main {
+  position: fixed;
+  margin-top: auto;
+  width: 100%;
+  height: inherit;
+}
+
+h1 {
+color:#3300ff;
+padding-left: -10px;
+font-size: 30px;
+line-height: 10px;
+}
+
+
+div#header2{
+  text-align: center;
+  position: relative;
+  margin-top: 0px;
+  left: 0px;
+  padding-top: 0px;
+  width: auto;
+  height: inherit;
+  background-color: #fff;
+  margin: 0;
+  z-index: -5;
+}
+
+h3{
+  border:0;
+  border-style:none;
+  outline:none;
+  font-size:15pt;
+}
+
+/* @end */
+/* @group newsection */
+#newssection{
+  width: 960px;
+  height: auto;
+  text-align: center;
+  margin:0 auto;
+  clear: both;
+}
+.thumbnail{
+  float: left;
+  text-align: center;
+  width: 240px;
+  height: 250px;
+  
+}
+.thumbnail_box{
+  float: left;
+  text-align: center;
+  width: 240px;
+  height: 250px;
+}
+.thumbnail_wrapper{
+  width: 240px;
+  height: 235px;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  top: 15px;
+  display: none;
+}
+.thumbnail_wrapper img{
+  position: absolute;
+  top: 0;
+  left: 0; 
+}
+.frame{
+  z-index: 3;
+}
+
+.cover{
+  z-index: 2;
+}
+.circle{
+  padding: 15px 8px 10px 7px;
+}
+.triangle{
+  padding: 22px 0 20px;
+}
+.square{
+  padding: 23px 17px 22px 16px;
+}
+#divider{
+  background-color: #f2f2f2;
+  height: 1px;
+  width: 930px;
+  float: left;
+  display: block;
+  clear: both;
+  margin-left: 15px;
+}
+
+.hidden{
+  visibility: hidden;
+  display:none;
+  height: 0px;
+}
+
+/* @end */
+
+/* @group footer */
+
+footer{
+  width: 960px;
+  height: 200px;
+  margin:0 auto;
+  text-align: center;
+}
+footer img{
+  margin-top: 100px;
+  margin-bottom: 35px;
+}
+
+/* @end */
+
+
+
+div.simpleTabs { margin: 20px; padding:10px; }
+ul.simpleTabsNavigation { margin:0 10px; padding:0; text-align:left;}
+ul.simpleTabsNavigation li { list-style:none; display:inline; margin:0; padding:0; }
+ul.simpleTabsNavigation li a { border:1px solid #E0E0E0; padding: 5 15 5 15; background:#F0F0F0; font-size:20px; text-decoration:none; }
+ul.simpleTabsNavigation li a:hover { background-color:#F6F6F6; }
+ul.simpleTabsNavigation li a.current { background:#fff; color:#222; border-bottom:1px solid #fff; }
+div.simpleTabsContent { border:1px solid #E0E0E0; padding:5px 15px 15px; margin-top:3px; display: none;}
+div.simpleTabsContent.currentTab { display:block; top:0;}
+
+
+a.atop {
+  border: none;
+}
+
+a.atitle{
+  border:none;
+  cursor: auto;
+}
+
+.othercat{
+  font-size: 14px;
+  display: inline;
+  border: none;
+}
+
+div.shortcutty {
+  background-color: #eee;
+  margin: 0;
+  padding: 5;
+}
+
+div.shortcutty a{
+  border: none;
+
+}
+
+div.subleft{
+  float: left;
+  width:45%;
+  position: relative;
+
+}
+
+div.leftli{
+ clear:both;
+ padding-top: 50px;
+}
+
+div.leftli2{
+  clear:both;
+padding-top: 30px;
+}
+
+div.appPic{
+  float: left;
+  width: 25%;
+  margin: 0 auto;
+
+}
+
+
+div.appDesc{
+  float: left;
+ width: 75%;
+  word-wrap:break-word;
+
+}
+
+div.paid
+{
+  border-left: 1px solid #000;
+  padding-left: 10px;
+  height: inherit;
+}
+
+div.free
+{
+  
+  padding-right: 10px;
+}
+
+h4.appTitle {
+  margin-bottom:0;
+  font-size: 12px;
+  font-weight: bold;
+  display: inline;
+}
+
+h3.fptitle {
+  margin-bottom:10px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p.rate {
+  font-size:12px;
+  margin:0;
+  display: inline;
+}
+
+.money {
+  color: green;
+}
+
+h5.categ{
+  margin:0;
+  font-size:9px;
+  color: blue;
+}
+
+a.footlink {
+  margin: 0 20px;
+}
+
+div.infocenter {
+  position: relative;
+  margin: 0 auto;
+}
+
+a.socialthumb {
+  display: inline-block;
+  border: none;
+  margin: 0 10px;
+}

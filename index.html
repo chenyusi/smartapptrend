@@ -1,0 +1,72 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style5.css">
+	<link href="css/screen.css" type="text/css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-navToggle.js"></script>
+    <script>
+    
+    $(document).ready(function(){
+       
+       
+     $('#menu').navToggle({ // default values below , same as calling $('#menu').navToggle();
+                             subMenuClass : "subMenu", 
+                               addToggles :  true,
+                           navToggleClass : "navToggle",
+                           collapsedClass : "collapsed",
+                            expandedClass : "expanded",
+                          activeLinkClass : "active",
+                              currentPath : window.location.pathname,
+                            expandCurrent : true
+              
+      }); // end navToggle
+        
+           
+    });
+    
+</script>
+
+<script type="text/javascript" src="js/modernizr.js"></script>
+	<title>Smart App Trends.</title>
+
+</head>
+
+<body>
+<div id="header">
+<header id="header" class="clearfix section">
+				<nav id="nav" class="center grid-14">
+					<div class="fonts-display clearfix">
+                        <p class="logo mq-mobile-i-block">
+                            <a href="home.html" title="COOL APPS">
+                                <img src="img/logo.png" alt="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park" />
+                            </a>
+                        </p>
+
+                        <br class="mq-mobile" />
+
+						<p class="text-left alpha"><a href="home.html" target="main">Home</a>
+						<p class="text-left"><a href="featured.html" target="main">Featured</a>
+						<p class="text-left"><a href="about.html" target="main">About</a>
+						<p class="logo mq-wide-i-block mq-mid-i-block mq-small-i-block">
+							<a href="home.html" target="main" title="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park">
+								<img class="logo-img" src="img/logo.png" alt="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park" />
+							</a>
+						<p class="text-right"><a href="ios.html" target="main">Apple Apps</a>
+						<p class="text-right"><a href="android.html" target="main">Android Apps</a>
+						<p class="text-right omega"><a href="windows.html" target="main">Windows Apps</a>
+					</div>
+				</nav> <!-- /#nav -->
+                	
+	
+</header>
+</div>
+
+
+<iframe src="home.html" name="main" allowTransparency="true"></iframe>
+<br>
+
+
+</body>
+
+</html>

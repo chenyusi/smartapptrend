@@ -1,0 +1,139 @@
+body
+{
+	background-color: #fff;
+	font-family: Orator Std;
+	font-size: 14px;
+	background-image: url('../img/bg/shattered.png');
+	background-position: fixed;
+	background-repeat: repeat;
+}
+
+.small {
+	max-height:200px;
+}
+
+iframe
+{
+position: absolute;
+top: 0px;
+left: 240px;
+height: 100%;
+width: 100%;
+overflow-y: scroll;
+z-index:3;
+border: none;
+}
+
+div#left {
+position: absolute;
+padding-left: 10px;
+left:0%;
+}
+
+div#right {
+position: absolute;
+padding-right: 10px;
+right:0%;
+}
+
+div#divBottom {
+position: relative;
+width:100%;
+height:auto;
+color:#333;
+font-size: 12px;
+}
+
+h1 {
+color:#3300ff;
+padding-left: -10px;
+font-size: 30px;
+line-height: 10px;
+}
+
+span.navToggle.collapsed:after{
+    content : "\2228"; 
+}span.navToggle.expanded:after{
+    content : "\2227"; 
+}
+
+span.navToggle{float:right; } 
+
+
+ul#menu ul {
+  list-style-type: none;
+  margin-left: 5px;
+  padding: 0px; 
+  display: none; 
+}
+ul#menu a.active {
+  color: #be5028;
+  font-weight: bold;
+}
+
+li a 
+{
+    cursor: pointer;
+}
+ul#menu {
+  width: 210px;
+  list-style-type: none;
+  border-top: solid 1px #fff;
+  margin: 0;
+  padding: 0;
+}
+
+ul#menu li, 
+  ul#menu a {
+  font-family: Orator Std;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+
+ul#menu li {
+  border-bottom: solid 1px #fff;
+  background: #000;
+  line-height: 25px;
+}
+
+ul#menu li li {
+	background: transparent;
+}
+
+ul#menu li:hover {
+	background: #3300ff;
+}
+
+ul#menu li li:hover {
+	background: #ff00ff;
+}
+
+ul#menu li li li:hover{
+	background: #ffff00;
+}
+
+ul#menu li li li a:hover{
+	color: #000;
+}
+
+ul#menu ul li {
+  border-bottom: none;
+}
+
+ul#menu ul li:before {
+ 
+}
+
+ul#menu a {
+  text-decoration: none;
+  outline: none;
+}
+
+ul#menu a:hover {
+  color: #fff;
+  
+  text-transform: uppercase;
+}

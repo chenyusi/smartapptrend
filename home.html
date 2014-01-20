@@ -1,0 +1,260 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style5.css">
+<link rel="stylesheet" type="text/css" href="css/screen.css">
+<script type="text/javascript" src="js/modernizr.js"></script>
+	<!-- News Section -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.jtweetsanywhere-1.0.1.css" />
+    <script type="text/javascript" src="js/jquery-1.5.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.10.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jtweetsanywhere-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.ba-dotimeout.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.lite.min.js"></script>
+
+    <script>
+
+
+    
+    $(document).ready(function(){
+
+
+    /* thumbnail */
+	shapes = $('.thumbnail_wrapper');  
+	$('.thumbnail_wrapper, nav').show();
+	$('.thumbnail_wrapper').animate({top:'-20px', opacity:0});
+	var z = 0;  
+	var refreshId = setInterval(function() {  
+	    
+	    shapes.eq(z).animate({top:'15px', opacity:100},{duration:1000, easing: 'easeOutBounce'});
+	     
+	     z++;  
+	     if (z > shapes.length) {  
+	        clearInterval(refreshId);  
+	     }  
+	}, 200);
+	
+	/* thumbnails hover action */
+		$(".thumbnail_wrapper").hover(function(){
+			$(".cover", this).stop().animate({top:'240px'},{queue:false,duration:300,easing: 'easeOutBack'});
+			$(this).animate({top:'3px'},{duration:300 , easing: 'easeInQuad'});
+		}, function() {
+			$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:100, easing: 'easeInBack'});
+			$(this).animate({top:'15px'},{duration:300, easing: 'easeOutBounce'});
+			
+		}); /* end thumbnails hover action */
+       
+       
+     $('#menu').navToggle({ // default values below , same as calling $('#menu').navToggle();
+                             subMenuClass : "subMenu", 
+                               addToggles :  true,
+                           navToggleClass : "navToggle",
+                           collapsedClass : "collapsed",
+                            expandedClass : "expanded",
+                          activeLinkClass : "active",
+                              currentPath : window.location.pathname,
+                            expandCurrent : true
+              
+      }); // end navToggle
+        
+           
+    });
+    
+<!-- newssection -->
+function myMouseOut(id){
+     	if ($(id).hasClass("over")){
+     		$(id).mouseleave(function(){
+     			$(id).slideUp({duration:300 , easing: 'easeInOutCubic'});
+     		});
+     	} else{
+     		$(id).slideUp({duration:300 , easing: 'easeInOutCubic'});
+     	}
+}	
+	
+ /* scroll */
+
+function goToByScroll(id){
+	if( $.browser.opera ){
+		$('html').animate({scrollTop: $("#"+id).offset().top},'slow');
+
+	}else {
+ 		$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow'); 
+  }
+}
+
+
+<!-- newssection ends-->
+
+
+</script>
+</head>
+
+<body>
+
+<div id="header2">
+	<header id="header" class="clearfix section">
+				<nav id="nav" class="center grid-14">
+					<div class="fonts-display clearfix">
+                        <p class="logo mq-mobile-i-block">
+                            <a href="#" title="COOL APPS">
+                                <img src="img/logo.png" alt="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park" />
+                            </a>
+                        </p>
+
+                        <br class="mq-mobile" />
+
+						<p class="text-left alpha"><a href="home.html" target="main">Home</a>
+						<p class="text-left"><a href="#" target="main">Featured</a>
+						<p class="text-left"><a href="about.html" target="main">About</a>
+						<p class="logo mq-wide-i-block mq-mid-i-block mq-small-i-block">
+							<a href="home.html" target="main" title="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park">
+								<img class="logo-img" src="img/logo.png" alt="Smart App Trend - Built by Vivian Park, Chenyu Si, Lauren Park" />
+							</a>
+						<p class="text-right"><a href="home.html" target="main">Apple Apps</a>
+						<p class="text-right"><a href="android.html" target="main">Android Apps</a>
+						<p class="text-right omega"><a href="home.html" target="main">Windows Apps</a>
+					</div>
+				</nav> <!-- /#nav -->
+	
+</header>
+	</div>
+	<header>
+	<hr class="grid-2 center mq-mobile" />
+	<h1 id="tagline">Smart App Trends</h1>
+</header><br>
+	<div id="newssection">
+	<!-- first row -->
+	<div id="divider"></div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.theverge.com/2013/3/13/4101536/twitter-windows-8" target="_BLANK">
+			<img class="frame" src="img/frame_circle.png">
+			<img class="cover" src="img/cover_w1.png">
+			<img src="img/w_1h.png"></a>
+		</div>
+	</div>
+
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.theverge.com/2013/3/15/4108640/dropbox-acquires-email-app-mailbox" target="_BLANK">
+			<img class="frame" src="img/frame_square.png">
+			<img class="cover" src="img/cover_i1.png">
+			<img src="img/i_1h.png"></a>
+		</div>
+	</div>
+
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://venturebeat.com/2013/03/15/jimu-makes-building-android-apps-as-simple-as-playing-lego-but-still-developer-friendly/#4wJjVSK2hiXyUgtJ.99 " target="_BLANK">
+			<img class="frame" src="img/frame_triangle.png">
+			<img class="cover" src="img/cover_a1.png">
+			<img  src="img/a_1h.png"></a>
+		</div>
+	</div>
+
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.theverge.com/2013/2/19/4004250/sunrise-for-iphone-calendar-app-for-a-post-google-world" target="_BLANK">
+			<img class="frame" src="img/frame_square.png">
+			<img class="cover" src="img/cover_i2.png">
+			<img src="img/i_2h.png"></a>
+		</div>
+	</div>
+
+	<div id="divider"></div>
+	
+	<!-- second row -->
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://norwalk.patch.com/articles/iphone-app-helps-norwalk-police-find-suspected-thief" target="_BLANK">
+			<img class="frame" src="img/frame_triangle.png">
+			<img class="cover" src="img/cover_i3.png">
+			<img src="img/i_3h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.gizmag.com/ik-multimedia-irig-recorder-for-android/26649/" target="_BLANK">
+			<img class="frame" src="img/frame_circle.png">
+			<img class="cover" src="img/cover_a2.png">
+			<img src="img/a_2h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://conversations.nokia.com/2013/03/15/disqus-app-first-on-windows-phone/" target="_BLANK">
+			<img class="frame" src="img/frame_square.png">
+			<img class="cover" src="img/cover_w2.png">
+			<img src="img/w_2h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://consumerist.com/2013/03/15/facebook-android-app-wants-to-bypass-google-play-store-for-updates/" target="_BLANK">
+			<img class="frame" src="img/frame_circle.png">
+			<img class="cover" src="img/cover_a3.png">
+			<img src="img/a_3h.png"></a>
+		</div>
+	</div>
+	<div id="divider"></div>
+	
+	<!-- third row -->
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://consumerist.com/2013/03/14/want-ad-blocking-apps-on-your-android-device-dont-expect-google-to-sell-them-anymore/" target="_BLANK">
+			<img class="frame" src="img/frame_square.png">
+			<img class="cover" src="img/cover_a4.png">
+			<img src="img/a_4h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.engadget.com/2013/03/14/babbel-brings-11-language-learning-apps-windows-phone-8-free/" target="_BLANK">
+			<img class="frame" src="img/frame_triangle.png">
+			<img class="cover" src="img/cover_w3.png">
+			<img src="img/w_3h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://thenextweb.com/apps/2013/03/15/the-geopapyrus-iphone-app-uses-image-recognition-to-augment-real-objects-with-photo-and-video/" target="_BLANK">
+			<img class="frame" src="img/frame_circle.png">
+			<img class="cover" src="img/cover_i4.png">
+			<img src="img/i_4h.png"></a>
+		</div>
+	</div>
+	<div id="td_t" class="thumbnail_box">
+		<div class="thumbnail_wrapper">
+			<a href="http://www.engadget.com/2013/03/11/microsoft-lync-2013-mobile-apps/" target="_BLANK">
+			<img class="frame" src="img/frame_triangle.png">
+			<img class="cover" src="img/cover_w4.png">
+			<img src="img/w_4h.png"></a>
+		</div>
+	</div>
+	<div id="divider"></div>
+
+
+<!-- footer arrow -->
+<!--<footer>
+
+<a title="top" href="javascript:void(0);" onclick="goToByScroll('top');"><img class="square" src="img/top.gif" width="52px" height="50px"></a>
+</footer>-->
+
+
+<div id="divBottom">
+
+	<div id="left"><a href="home.html" class="footlink" target="main">Smart App Trends.</a> &copy; 2013 Vivian, Lauren, &amp; Chenyu.</div>
+
+	<div id="right">
+		<a href="pdf/Wireframe.pdf" class="footlink" target="_blank">Wireframes</a> | <a href="pdf/TaskDivisionList.pdf" class="footlink" target="_blank">Task Division</a> | <a href="http://beta.thiscourse.com/" class="footlink" target="_blank">Course Website</a>
+
+	</div>
+
+</div>
+
+</div> <!--end of main -->
+
+</body>
+
+</html>
